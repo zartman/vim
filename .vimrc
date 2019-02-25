@@ -19,6 +19,7 @@ set spelllang=en
   augroup END
   set ruler
   set textwidth=90
+  colo desert
 " set colorcolumn=81
   execute "set colorcolumn=" . join(range(81,335), ',')
   highlight ColorColumn ctermbg=darkgray
