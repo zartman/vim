@@ -1,6 +1,14 @@
 "Spell Check
 set spelllang=en
 
+"Swap directory
+set directory=~/vim/swapfiles//
+
+"Boiler plate
+function! VerBoil()
+  r ~/vim/verilog_boilerplate.v
+endfunction
+
 "Tab Settings
   set expandtab
   set tabstop=2
@@ -17,14 +25,15 @@ set spelllang=en
     autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
     autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
   augroup END
+
   set ruler
   set textwidth=90
   colo desert
 " set colorcolumn=81
   execute "set colorcolumn=" . join(range(81,335), ',')
-  highlight ColorColumn ctermbg=darkgray
+  highlight ColorColumn ctermbg=0
   set cursorline
-  highlight CursorLine ctermbg=232
+  highlight CursorLine ctermbg=0
 
 "Menu options?
   set wildmenu
@@ -50,3 +59,4 @@ set spelllang=en
 "  autocmd BufWinLeave * mkview
 "  autocmd BufWinEnter * silent loadview
 "augroup END
+
