@@ -2,7 +2,7 @@
 set spelllang=en
 
 "Swap directory
-set directory=~/vim/swapfiles//
+set directory=~/vim/swapfiles/
 
 "Boiler plate
 function! VerBoil()
